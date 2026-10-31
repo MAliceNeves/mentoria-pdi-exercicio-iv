@@ -1,0 +1,15 @@
+:root { color-scheme: dark; background: #000; }
+* { box-sizing: border-box; }
+html { overflow-x: hidden; overscroll-behavior-y: none; scrollbar-width: none; -ms-overflow-style: none; }
+html::-webkit-scrollbar, body::-webkit-scrollbar { display: none; width: 0; height: 0; }
+body { margin: 0; background: #000; }
+/* A real, growing document lets wheel, touch, keyboard and scrollbar work natively. */
+#garden { height: 3860vh; width: min(100%, 960px); margin-inline: auto; }
+.viewport { position: sticky; top: 0; width: 100%; height: 100vh; height: 100svh; overflow: hidden; background: #000; }
+.scene { position: absolute; inset: 0; opacity: 0; overflow: hidden; pointer-events: none; }
+.scene:first-child { opacity: 1; }
+.scene img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 57%; transform-origin: 50% 58%; will-change: transform; }
+.scene-tree img { height: 140%; object-position: center; }
+.scene-tunnel img { transform-origin: 50% 45%; }
+.scene-final img { width: 180%; height: 120%; max-width: none; object-position: center; }
+#blackout { position: absolute; inset: 0; background: #000; opacity: 1; pointer-events: none; }
